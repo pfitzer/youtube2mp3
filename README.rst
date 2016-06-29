@@ -1,11 +1,12 @@
 youtube2mp3
 ===========
-a wrapper to simplify youtube downloads with youtube-dl, see <https://github.com/rg3/youtube-dl>
+| a wrapper to simplify youtube downloads with youtube-dl, see <https://github.com/rg3/youtube-dl>
+| downloaded files will be tagged with mutagen
 
 installation
 ------------
 | python setup.py build
-|python setup.py install
+| python setup.py install
 
 usage
 -----
