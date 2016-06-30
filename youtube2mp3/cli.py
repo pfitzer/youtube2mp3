@@ -4,7 +4,6 @@ import os
 from options import options
 from mutagen.easyid3 import EasyID3
 
-
 def main():
     if not options.directory:
         print "a directory where to save the files must be set!"
@@ -12,6 +11,7 @@ def main():
     if not options.youtube_url:
         print "the youtube url is missing!"
         return -1
+
 
     os.chdir(options.directory)
     ydl_opts = {'format': 'bestaudio/best',

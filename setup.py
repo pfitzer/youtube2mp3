@@ -20,9 +20,18 @@ setup(
     author_email = 'pfitzer666@gmail.com',
     license = 'MIT',
     install_requires = ['youtube-dl', 'mutagen'],
+    keywords = 'youtube mp3',
     entry_points = {
         'console_scripts': [
             'youtube2mp3=youtube2mp3.cli:main',
         ],
-    }
+    },
+    classifiers=[
+        'Development Status :: Production - Stable',
+        'License :: OSI Approved :: MIT License',
+        'Environment :: Console',
+        'Intended Audience :: End Users/Desktop',
+        'Programming Language :: Python :: 2.7',
+        'Topic :: Multimedia :: Video :: Conversion'
+    ]
 )
