@@ -1,8 +1,3 @@
-__author__ = 'micpfist'
-
-"""Packaging settings."""
-
-
 from codecs import open
 from os.path import abspath, dirname, join
 

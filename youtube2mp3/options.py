@@ -1,5 +1,3 @@
-__author__ = 'micpfist'
-
 from optparse import OptionParser
 
 usage = "usage: %prog [options] arg1 arg2"
