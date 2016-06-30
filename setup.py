@@ -27,7 +27,7 @@ setup(
         ],
     },
     classifiers=[
-        'Development Status :: Production/Stable',
+        'Development Status :: 5 - Production/Stable',
         'License :: OSI Approved :: MIT License',
         'Environment :: Console',
         'Intended Audience :: End Users/Desktop',
