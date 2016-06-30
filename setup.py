@@ -1,8 +1,6 @@
 from codecs import open
 from os.path import abspath, dirname, join
-
-from setuptools import setup
-
+from setuptools import setup, find_packages
 from youtube2mp3 import __version__, __author__
 
 
@@ -21,6 +19,7 @@ setup(
     license = 'MIT',
     install_requires = ['youtube-dl', 'mutagen'],
     keywords = 'youtube mp3',
+    packages = find_packages(),
     entry_points = {
         'console_scripts': [
             'youtube2mp3=youtube2mp3.cli:main',
