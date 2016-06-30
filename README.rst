@@ -5,9 +5,8 @@ youtube2mp3
 
 installation
 ------------
-with pip
+| with pip
 | pip install youtube2mp3
-|
 | python setup.py build
 | python setup.py install
 
