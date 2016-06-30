@@ -5,11 +5,10 @@ __author__ = 'micpfist'
 
 from codecs import open
 from os.path import abspath, dirname, join
-from subprocess import call
 
-from setuptools import Command, find_packages, setup
+from setuptools import setup
 
-from bin import __version__, __author__
+from youtube2mp3 import __version__, __author__
 
 
 this_dir = abspath(dirname(__file__))
@@ -28,7 +27,7 @@ setup(
     install_requires = ['youtube-dl', 'mutagen'],
     entry_points = {
         'console_scripts': [
-            'youtube2mp3=bin.cli:main',
+            'youtube2mp3=youtube2mp3.cli:main',
         ],
     }
 )
