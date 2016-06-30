@@ -16,7 +16,7 @@ with open(join(this_dir, 'README.rst'), encoding='utf-8') as file:
     long_description = file.read()
 
 setup(
-    name = 'youtube_to_mp3',
+    name = 'youtube2mp3',
     version = __version__,
     description = 'Commandline tool to convert youtube videos to tagged mp3 files',
     long_description = long_description,
