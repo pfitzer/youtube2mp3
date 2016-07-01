@@ -1,9 +1,10 @@
+import sys
 from optparse import OptionParser
 from youtube2mp3 import __version__
 
 def show_version(option, opt, value, parser):
     print "Version: %s" %  __version__
-    exit()
+    sys.exit(0)
 
 usage = "usage: %prog [options] arg1 arg2"
 parser = OptionParser(usage=usage)
