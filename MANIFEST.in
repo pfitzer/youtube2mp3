@@ -2,7 +2,9 @@ exclude .gitignore
 exclude .coverage
 exclude .idea
 exclude .travis.yml
+exclude .gitchangelog.rc
 include README.rst
+include CHANGELOG.rst
 include setup.cfg
 prune .cache
 prune .git
