@@ -3,3 +3,4 @@
 /dist/
 /build/
 /youtube2mp3.egg-info/
+/Pipfile.lock

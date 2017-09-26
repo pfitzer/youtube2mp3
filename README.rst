@@ -21,3 +21,13 @@ usage
 youtube2mp3 [options] arg1 arg2
 
 see *youtube2mp3 -h* for more information
+
+development
+-----------
+We use pipenv for development environment - *pip install pipenv*
+
+create virtual environment
+*pipenv --two*
+
+install dependencies
+*pipenv install*
