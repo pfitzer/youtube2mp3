@@ -15,7 +15,7 @@ setup(
     long_description = long_description,
     url = 'https://github.com/pfitzer/youtube2mp3.git',
     author = __author__,
-    author_email = 'pfitzer666@gmail.com',
+    author_email = 'michael@mp-development.de',
     license = 'MIT',
     install_requires = ['youtube-dl', 'mutagen'],
     keywords = 'youtube mp3',
@@ -31,6 +31,7 @@ setup(
         'Environment :: Console',
         'Intended Audience :: End Users/Desktop',
         'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
         'Topic :: Multimedia :: Video :: Conversion'
     ]
 )
