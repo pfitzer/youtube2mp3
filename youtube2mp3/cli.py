@@ -13,10 +13,10 @@ class Youtube2mp3(object):
 
     def run(self):
         if not options.directory:
-            print("a directory where to save the files must be set!")
+            print("a directory \"-d\" where to save the files must be set!")
             sys.exit(1)
         if not options.youtube_url:
-            print("the youtube url is missing!")
+            print("the youtube url \"-y\" is missing!")
             sys.exit(1)
 
         ydl_opts = {'format': 'bestaudio/best',
@@ -31,7 +31,7 @@ class Youtube2mp3(object):
                 ydl.download([options.youtube_url])
             except (youtube_dl.utils.DownloadError, youtube_dl.utils.ContentTooShortError,
                 youtube_dl.utils.ExtractorError) as e:
-                print(e.msg)
+                print(e.message)
                 sys.exit(1)
 
         self._set_id3()
