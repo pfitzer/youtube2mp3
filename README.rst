@@ -1,3 +1,5 @@
+|image0| |image1|
+
 youtube2mp3
 ===========
 a wrapper to simplify youtube downloads with `youtube-dl <https://github.com/rg3/youtube-dl>`_
@@ -31,3 +33,11 @@ create virtual environment
 
 install dependencies
 *pipenv install*
+
+.. |image0| image:: https://pyup.io/repos/github/pfitzer/youtube2mp3/shield.svg
+     :target: https://pyup.io/repos/github/pfitzer/youtube2mp3/
+     :alt: Updates
+
+.. |image1| image:: https://pyup.io/repos/github/pfitzer/youtube2mp3/python-3-shield.svg
+     :target: https://pyup.io/repos/github/pfitzer/youtube2mp3/
+     :alt: Python 3
