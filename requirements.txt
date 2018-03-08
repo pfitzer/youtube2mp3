@@ -1,0 +1,3 @@
+gitchangelog==3.0.3
+mutagen==1.38
+youtube-dl==2017.10.1
