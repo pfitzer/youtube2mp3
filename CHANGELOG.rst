@@ -2,8 +2,9 @@ Changelog
 =========
 
 
-%%version%% (unreleased)
-------------------------
+0.4.2 (2018-04-09)
+------------------
+- New version 0.4.2. [micpfist]
 - Merge pull request #9 from pfitzer/pyup-update-youtube-
   dl-2018.3.20-to-2018.4.9. [Michael Pfister]
 
