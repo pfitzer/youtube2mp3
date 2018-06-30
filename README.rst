@@ -1,4 +1,4 @@
-|image0| |image1|
+|image0| |image1| |image2|
 
 youtube2mp3
 ===========
@@ -34,10 +34,16 @@ create virtual environment
 install dependencies
 *pipenv install*
 
-.. |image0| image:: https://pyup.io/repos/github/pfitzer/youtube2mp3/shield.svg
+
+
+.. |image0| image:: https://img.shields.io/pypi/v/youtube2mp3.svg
+     :target: https://pypi.python.org/pypi?name=youtube2mp3&:action=display
+     :alt: pypi
+
+.. |image1| image:: https://pyup.io/repos/github/pfitzer/youtube2mp3/shield.svg
      :target: https://pyup.io/repos/github/pfitzer/youtube2mp3/
      :alt: Updates
 
-.. |image1| image:: https://pyup.io/repos/github/pfitzer/youtube2mp3/python-3-shield.svg
+.. |image2| image:: https://pyup.io/repos/github/pfitzer/youtube2mp3/python-3-shield.svg
      :target: https://pyup.io/repos/github/pfitzer/youtube2mp3/
      :alt: Python 3
