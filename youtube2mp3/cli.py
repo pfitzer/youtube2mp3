@@ -62,3 +62,7 @@ class Youtube2mp3(object):
 def main():
     y2mp3 = Youtube2mp3()
     y2mp3.run()
+
+
+if __name__ == '__main__':
+    main()

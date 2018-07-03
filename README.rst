@@ -10,17 +10,16 @@ installation
 ------------
 with pip
 """"""""
-pip install youtube2mp3
+::
 
-manual install
-""""""""""""""
-python setup.py build
+    pip install youtube2mp3
 
-python setup.py install
 
 usage
 -----
-youtube2mp3 [options] arg1 arg2
+::
+
+    youtube2mp3 [options] arg1 arg2
 
 see *youtube2mp3 -h* for more information
 
@@ -46,4 +45,4 @@ install dependencies
 
 .. |image2| image:: https://pyup.io/repos/github/pfitzer/youtube2mp3/python-3-shield.svg
      :target: https://pyup.io/repos/github/pfitzer/youtube2mp3/
-     :alt: Python 3
+     :alt: Python ::
