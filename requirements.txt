@@ -1,3 +1,0 @@
-gitchangelog==3.0.4
-youtube-dl==2019.3.9
-mutagen==1.42.0

@@ -1,17 +1,21 @@
 [[source]]
+
 url = "https://pypi.python.org/simple"
 verify_ssl = true
 name = "pypi"
 
+
 [dev-packages]
 
-gitchangelog = "*"
-"youtube-dl" = "*"
-mutagen = "*"
+mutagen = "==1.42.0"
+
 
 [packages]
-gitchangelog = "*"
+
+gitchangelog = "==3.0.4"
+youtube-dl = "==2019.3.9"
 
 
 [requires]
+
 python_version = "2.7"

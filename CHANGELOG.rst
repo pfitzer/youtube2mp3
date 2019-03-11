@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-%%version%% (unreleased)
+0.6.0 (unreleased)
 ------------------------
 - Update issue templates. [Michael Pfister]
 - Create PULL_REQUEST_TEMPLATE.md. [Michael Pfister]
