@@ -1,8 +1,12 @@
 from __future__ import unicode_literals
+
+import os
+import sys
+
 import youtube_dl
-import os, sys
-from options import options
 from mutagen.easyid3 import EasyID3
+
+from youtube2mp3.options import options
 
 
 class Youtube2mp3(object):
@@ -25,12 +29,12 @@ class Youtube2mp3(object):
                         'preferredcodec': 'mp3',
                         'preferredquality': '192',
                     }],
-                    'progress_hooks': [self._download_hook],}
+                    'progress_hooks': [self._download_hook], }
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             try:
                 ydl.download([options.youtube_url])
             except (youtube_dl.utils.DownloadError, youtube_dl.utils.ContentTooShortError,
-                youtube_dl.utils.ExtractorError) as e:
+                    youtube_dl.utils.ExtractorError) as e:
                 print(e.message)
                 sys.exit(1)
 
@@ -41,7 +45,6 @@ class Youtube2mp3(object):
             self.FILES.append(d['filename'])
             print('Done downloading, now converting ...')
             print(d['filename'])
-
 
     def _set_id3(self):
         if self.FILES:
