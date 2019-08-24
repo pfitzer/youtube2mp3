@@ -14,7 +14,8 @@ class TestCase(unittest.TestCase):
     def test_download(self):
         y = Youtube2mp3()
         y.run()
-        self.assertEqual(True, False)
+        file_name = os.path.join(TEST_ROOT, 'EDX - Stay-XPudIeRotdI.mp3')
+        self.assertEqual(True, os.path.exists(file_name))
 
 
 if __name__ == '__main__':
