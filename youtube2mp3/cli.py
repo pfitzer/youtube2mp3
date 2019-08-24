@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 
 import os
+import shutil
 import sys
 
 import youtube_dl
@@ -11,9 +12,6 @@ from youtube2mp3.options import options
 
 class Youtube2mp3(object):
     FILES = []
-
-    def __init(self):
-        os.chdir(options.directory)
 
     def run(self):
         if not options.directory:
@@ -60,6 +58,7 @@ class Youtube2mp3(object):
                 file['title'] = title
                 file['artist'] = artist
                 file.save()
+                shutil.move(name + '.mp3', os.path.join(options.directory, name + '.mp3'))
 
 
 def main():
