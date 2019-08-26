@@ -3,15 +3,21 @@ from __future__ import unicode_literals
 import os
 import shutil
 import sys
+import re
+import tempfile
+import platform
 
 import youtube_dl
 from mutagen.easyid3 import EasyID3
 
 from youtube2mp3.options import options
 
-
 class Youtube2mp3(object):
     FILES = []
+
+    def __init__(self):
+        tempdir = '/tmp' if platform.system() == 'Darwin' else tempfile.gettempdir()
+        os.chdir(tempdir)
 
     def run(self):
         if not options.directory:
@@ -44,6 +50,13 @@ class Youtube2mp3(object):
             print('Done downloading, now converting ...')
             print(d['filename'])
 
+    def _get_tagging_params(self, name):
+        regex = '(?=-)'
+        if len(re.findall(regex, name)) > 2:
+            name = re.sub('-', '', name, 1)
+        (artist, title, code) = name.split('-')
+        return artist, title, code
+
     def _set_id3(self):
         if self.FILES:
             for file in self.FILES:
@@ -52,12 +65,16 @@ class Youtube2mp3(object):
                     name = os.path.splitext(base)[0]
                 except Exception:
                     continue
-                (artist, title, code) = name.split('-')
-                print("[tagging]: %s" % name + '.mp3')
-                file = EasyID3(name + '.mp3')
-                file['title'] = title
-                file['artist'] = artist
-                file.save()
+                try:
+                    (artist, title, code) = self._get_tagging_params(name)
+                    print("[tagging]: %s" % name + '.mp3')
+                    file = EasyID3(name + '.mp3')
+                    file['title'] = title
+                    file['artist'] = artist
+                    file.save()
+                except Exception as e:
+                    print('[info]: not able to tag file. naming problem')
+                    pass
                 shutil.move(name + '.mp3', os.path.join(options.directory, name + '.mp3'))
 
 

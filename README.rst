@@ -25,14 +25,15 @@ see *youtube2mp3 -h* for more information
 
 development
 -----------
-We use pipenv for development environment - *pip install pipenv*
+Create a virtual environment
+::
 
-create virtual environment
-*pipenv --two*
+    python3 -m venv /path/to/new/virtual/environment
 
 install dependencies
-*pipenv install*
+::
 
+    pip install -r requirements.txt
 
 
 .. |image0| image:: https://img.shields.io/pypi/v/youtube2mp3.svg
