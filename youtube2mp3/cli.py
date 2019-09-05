@@ -1,17 +1,19 @@
 from __future__ import unicode_literals
 
 import os
+import platform
+import re
 import shutil
 import sys
-import re
 import tempfile
-import platform
 
 import youtube_dl
 from mutagen.easyid3 import EasyID3
 
 from youtube2mp3.options import options
 
+
+# noinspection PyBroadException,PyBroadException
 class Youtube2mp3(object):
     FILES = []
 
@@ -50,7 +52,8 @@ class Youtube2mp3(object):
             print('Done downloading, now converting ...')
             print(d['filename'])
 
-    def _get_tagging_params(self, name):
+    @staticmethod
+    def _get_tagging_params(name):
         regex = '(?=-)'
         if len(re.findall(regex, name)) > 2:
             name = re.sub('-', '', name, 1)
@@ -63,7 +66,7 @@ class Youtube2mp3(object):
                 try:
                     base = os.path.basename(str(file))
                     name = os.path.splitext(base)[0]
-                except Exception:
+                except Exception:  # noqa
                     continue
                 try:
                     (artist, title, code) = self._get_tagging_params(name)
@@ -72,7 +75,7 @@ class Youtube2mp3(object):
                     file['title'] = title
                     file['artist'] = artist
                     file.save()
-                except Exception as e:
+                except Exception:
                     print('[info]: not able to tag file. naming problem')
                     pass
                 shutil.move(name + '.mp3', os.path.join(options.directory, name + '.mp3'))
