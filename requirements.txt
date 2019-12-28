@@ -1,4 +1,4 @@
 gitchangelog==3.0.4
 mutagen==1.42.0
 toml==0.10.0
-youtube-dl==2019.11.28
+youtube-dl==2019.12.25
