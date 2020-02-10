@@ -2,16 +2,102 @@ Changelog
 =========
 
 
+0.9.0 (2020-02-10)
+------------------
+- Merge pull request #77 from pfitzer/pyup-update-
+  mutagen-1.42.0-to-1.44.0. [Michael Pfister]
+
+  Update mutagen to 1.44.0
+- Update mutagen from 1.42.0 to 1.44.0. [pyup-bot]
+- Skipped python 2.7 support. [Michael Pfister]
+- Update unittest.yml. [Michael Pfister]
+
+  run test on python 3.8
+- Merge pull request #76 from pfitzer/pyup-update-youtube-
+  dl-2020.1.15-to-2020.1.24. [Michael Pfister]
+
+  Update youtube-dl to 2020.1.24
+- Update youtube-dl from 2020.1.15 to 2020.1.24. [pyup-bot]
+- Merge pull request #75 from pfitzer/pyup-update-youtube-
+  dl-2020.1.1-to-2020.1.15. [Michael Pfister]
+
+  Update youtube-dl to 2020.1.15
+- Update youtube-dl from 2020.1.1 to 2020.1.15. [pyup-bot]
+- Merge pull request #74 from pfitzer/pyup-update-youtube-
+  dl-2019.12.25-to-2020.1.1. [Michael Pfister]
+
+  Update youtube-dl to 2020.1.1
+- Update youtube-dl from 2019.12.25 to 2020.1.1. [pyup-bot]
+- Merge pull request #73 from pfitzer/pyup-update-youtube-
+  dl-2019.11.28-to-2019.12.25. [Michael Pfister]
+
+  Update youtube-dl to 2019.12.25
+- Update youtube-dl from 2019.11.28 to 2019.12.25. [pyup-bot]
+- Merge pull request #72 from pfitzer/pyup-update-youtube-
+  dl-2019.11.22-to-2019.11.28. [Michael Pfister]
+
+  Update youtube-dl to 2019.11.28
+- Update youtube-dl from 2019.11.22 to 2019.11.28. [pyup-bot]
+- Merge pull request #71 from pfitzer/pyup-update-youtube-
+  dl-2019.11.5-to-2019.11.22. [Michael Pfister]
+
+  Update youtube-dl to 2019.11.22
+- Update youtube-dl from 2019.11.5 to 2019.11.22. [pyup-bot]
+- Merge pull request #70 from pfitzer/pyup-update-youtube-
+  dl-2019.10.29-to-2019.11.5. [Michael Pfister]
+
+  Update youtube-dl to 2019.11.5
+- Update youtube-dl from 2019.10.29 to 2019.11.5. [pyup-bot]
+- Merge pull request #69 from pfitzer/pyup-update-youtube-
+  dl-2019.10.22-to-2019.10.29. [Michael Pfister]
+
+  Update youtube-dl to 2019.10.29
+- Update youtube-dl from 2019.10.22 to 2019.10.29. [pyup-bot]
+- Merge pull request #68 from pfitzer/pyup-update-youtube-
+  dl-2019.10.16-to-2019.10.22. [Michael Pfister]
+
+  Update youtube-dl to 2019.10.22
+- Update youtube-dl from 2019.10.16 to 2019.10.22. [pyup-bot]
+- Merge pull request #67 from pfitzer/pyup-update-youtube-
+  dl-2019.9.28-to-2019.10.16. [Michael Pfister]
+
+  Update youtube-dl to 2019.10.16
+- Update youtube-dl from 2019.9.28 to 2019.10.16. [pyup-bot]
+- Merge pull request #66 from pfitzer/pyup-update-youtube-
+  dl-2019.9.12.1-to-2019.9.28. [Michael Pfister]
+
+  Update youtube-dl to 2019.9.28
+- Update youtube-dl from 2019.9.12.1 to 2019.9.28. [pyup-bot]
+- Update unittest.yml. [Michael Pfister]
+- Merge pull request #65 from pfitzer/pyup-update-youtube-
+  dl-2019.9.1-to-2019.9.12.1. [Michael Pfister]
+
+  Update youtube-dl to 2019.9.12.1
+- Update youtube-dl from 2019.9.1 to 2019.9.12.1. [pyup-bot]
+- Updated dependencies. [Michael Pfister]
+- Switch from travis to github actions. [Michael Pfister]
+- Switch from travis to github actions. [Michael Pfister]
+- Test github actions. [Michael Pfister]
+- Test github actions. [Michael Pfister]
+- Update pythonpackage.yml. [Michael Pfister]
+- Changelog. [Michael Pfister]
+
+
 0.8.0 (2019-08-26)
 ------------------
-- fixed exception if video name does not match [Michael Pfister]
-- use tmp dir for download. [Michael Pfister]
+- # fixed exception if video name does not match # use tmp dir for
+  download. [Michael Pfister]
 
 
 0.7.0 (2019-08-24)
 ------------------
+- Fixed unit tests. [Michael Pfister]
+- Fixed unit tests. [Michael Pfister]
+- Fixed path in unittest. [Michael Pfister]
 - Unittest. [Michael Pfister]
 - Fixed python 3 import error. [Michael Pfister]
+- Fixed python 3 import error. [Michael Pfister]
+- Update README.rst. [Michael Pfister]
 - Update README.rst. [Michael Pfister]
 
 
