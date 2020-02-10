@@ -19,6 +19,7 @@ setup(
     install_requires=['youtube-dl', 'mutagen'],
     keywords='youtube mp3',
     packages=find_packages(),
+    python_requires='~=3.6',
     entry_points={
         'console_scripts': [
             'youtube2mp3=youtube2mp3.cli:main',
@@ -29,10 +30,9 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Environment :: Console',
         'Intended Audience :: End Users/Desktop',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
         'Topic :: Multimedia :: Video :: Conversion'
     ]
 )
