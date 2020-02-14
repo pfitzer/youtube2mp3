@@ -49,5 +49,5 @@ install dependencies
      :alt: Python ::
      
 .. |image3| image:: https://img.shields.io/pypi/dm/youtube2mp3.svg
-    :target: https://pyup.io/repos/github/pfitzer/youtube2mp3/
+    :target: https://pypistats.org/packages/youtube2mp3
     :alt: PyPI - Downloads
