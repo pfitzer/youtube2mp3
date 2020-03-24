@@ -53,3 +53,5 @@ install dependencies
     :alt: PyPI - Downloads
     
 .. |image4| image:: https://github.com/pfitzer/youtube2mp3/workflows/Unit%20Test/badge.svg?event=push
+    :target: https://github.com/pfitzer/youtube2mp3/actions
+    :alt: Unit Tests
