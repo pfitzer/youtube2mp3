@@ -1,4 +1,4 @@
-|image0| |image1| |image2| |image3|
+|image0| |image1| |image2| |image3| |image4|
 
 youtube2mp3
 ===========
@@ -51,3 +51,5 @@ install dependencies
 .. |image3| image:: https://img.shields.io/pypi/dm/youtube2mp3.svg
     :target: https://pypistats.org/packages/youtube2mp3
     :alt: PyPI - Downloads
+    
+.. |image4| image:: https://github.com/pfitzer/youtube2mp3/workflows/Unit%20Test/badge.svg?event=push
