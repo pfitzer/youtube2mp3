@@ -2,6 +2,64 @@ Changelog
 =========
 
 
+1.1.0 (2020-06-02)
+------------------
+- Posibility to use a file with yt urls. [Michael Pfister]
+- Merge pull request #86 from pfitzer/pyup-update-youtube-
+  dl-2020.5.8-to-2020.5.29. [Michael Pfister]
+
+  Update youtube-dl to 2020.5.29
+- Update youtube-dl from 2020.5.8 to 2020.5.29. [pyup-bot]
+- Merge pull request #85 from pfitzer/pyup-update-toml-0.10.0-to-0.10.1.
+  [Michael Pfister]
+
+  Update toml to 0.10.1
+- Update toml from 0.10.0 to 0.10.1. [pyup-bot]
+- Merge pull request #84 from pfitzer/pyup-update-youtube-
+  dl-2020.5.3-to-2020.5.8. [Michael Pfister]
+
+  Update youtube-dl to 2020.5.8
+- Update youtube-dl from 2020.5.3 to 2020.5.8. [pyup-bot]
+- Merge pull request #83 from pfitzer/pyup-update-youtube-
+  dl-2020.3.24-to-2020.5.3. [Michael Pfister]
+
+  Update youtube-dl to 2020.5.3
+- Update youtube-dl from 2020.3.24 to 2020.5.3. [pyup-bot]
+- Merge pull request #82 from pfitzer/pyup-update-youtube-
+  dl-2020.3.8-to-2020.3.24. [Michael Pfister]
+
+  Update youtube-dl to 2020.3.24
+- Update youtube-dl from 2020.3.8 to 2020.3.24. [pyup-bot]
+- Merge pull request #81 from pfitzer/pyup-update-youtube-
+  dl-2020.3.6-to-2020.3.8. [Michael Pfister]
+
+  Update youtube-dl to 2020.3.8
+- Update youtube-dl from 2020.3.6 to 2020.3.8. [pyup-bot]
+- Merge pull request #80 from pfitzer/pyup-update-youtube-
+  dl-2020.3.1-to-2020.3.6. [Michael Pfister]
+
+  Update youtube-dl to 2020.3.6
+- Update youtube-dl from 2020.3.1 to 2020.3.6. [pyup-bot]
+
+
+1.0.0 (2020-03-02)
+------------------
+- Use versions for dependecies. [Michael Pfister]
+- Merge pull request #79 from pfitzer/pyup-update-youtube-
+  dl-2020.2.16-to-2020.3.1. [Michael Pfister]
+
+  Update youtube-dl to 2020.3.1
+- Update youtube-dl from 2020.2.16 to 2020.3.1. [pyup-bot]
+- Merge pull request #78 from pfitzer/pyup-update-youtube-
+  dl-2020.1.24-to-2020.2.16. [Michael Pfister]
+
+  Update youtube-dl to 2020.2.16
+- Update youtube-dl from 2020.1.24 to 2020.2.16. [pyup-bot]
+- Update README.rst. [Michael Pfister]
+- Changlog. [Michael Pfister]
+- Skipped python 2.7 support. [Michael Pfister]
+
+
 0.9.0 (2020-02-10)
 ------------------
 - Merge pull request #77 from pfitzer/pyup-update-
