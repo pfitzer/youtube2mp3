@@ -22,6 +22,17 @@ usage
     youtube2mp3 [options] arg1 arg2
 
 see *youtube2mp3 -h* for more information
+::
+
+    Options:
+  -h, --help            show this help message and exit
+  -d DIRECTORY, --directory=DIRECTORY
+                        directory to store the files
+  -y YOUTUBE_URL, --youtube-url=YOUTUBE_URL
+                        link to a youtube video or playlist. Or path to a file
+                        with yt urls.
+  -V, --version         show version and exit
+
 
 development
 -----------

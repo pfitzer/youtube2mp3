@@ -1,3 +1,3 @@
 #
-__author__ = 'micpfist'
-__version__ = '1.0.0'
+__author__ = 'Michael Pfister'
+__version__ = '1.1.0'

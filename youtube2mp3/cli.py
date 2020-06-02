@@ -18,6 +18,7 @@ class Youtube2mp3(object):
     FILES = []
 
     def __init__(self):
+        self.FILES = []
         tempdir = '/tmp' if platform.system() == 'Darwin' else tempfile.gettempdir()
         os.chdir(tempdir)
 
@@ -38,7 +39,13 @@ class Youtube2mp3(object):
                     'progress_hooks': [self._download_hook], }
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             try:
-                ydl.download([options.youtube_url])
+                if os.path.isfile(options.youtube_url):
+                    file = open(options.youtube_url, 'r')
+                    lines = file.readlines()
+                    ydl.download(lines)
+                    file.close()
+                else:
+                    ydl.download([options.youtube_url])
             except (youtube_dl.utils.DownloadError, youtube_dl.utils.ContentTooShortError,
                     youtube_dl.utils.ExtractorError) as e:
                 print(e.message)
