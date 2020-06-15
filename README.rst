@@ -45,6 +45,8 @@ install dependencies
 ::
 
     pip install -r requirements.txt
+    
+|image5|
 
 
 .. |image0| image:: https://img.shields.io/pypi/v/youtube2mp3.svg
@@ -66,3 +68,7 @@ install dependencies
 .. |image4| image:: https://github.com/pfitzer/youtube2mp3/workflows/Unit%20Test/badge.svg?event=push
     :target: https://github.com/pfitzer/youtube2mp3/actions
     :alt: Unit Tests
+    
+-- |image5| image:: https://cdn.buymeacoffee.com/buttons/lato-orange.png
+    :target: https://www.buymeacoffee.com/pfitzer
+    :alt: Buy Me a Beer
