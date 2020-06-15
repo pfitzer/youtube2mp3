@@ -69,6 +69,6 @@ install dependencies
     :target: https://github.com/pfitzer/youtube2mp3/actions
     :alt: Unit Tests
     
--- |image5| image:: https://cdn.buymeacoffee.com/buttons/lato-orange.png
+.. |image5| image:: https://cdn.buymeacoffee.com/buttons/lato-orange.png
     :target: https://www.buymeacoffee.com/pfitzer
     :alt: Buy Me a Beer
