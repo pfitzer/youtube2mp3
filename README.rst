@@ -1,4 +1,4 @@
-|image0| |image1| |image2| |image3| |image4|
+|image0| |image1| |image6| |image2| |image3| |image4|
 
 youtube2mp3
 ===========
@@ -72,3 +72,7 @@ install dependencies
 .. |image5| image:: https://cdn.buymeacoffee.com/buttons/lato-orange.png
     :target: https://www.buymeacoffee.com/pfitzer
     :alt: Buy Me a Beer
+
+.. |image6| image:: https://img.shields.io/pypi/pyversions/youtube2mp3.svg?logo=python&logoColor=FFE873
+    :target: https://pypi.python.org/pypi?name=youtube2mp3&:action=display
+    :alt: youtube2mp3 on pypi
