@@ -16,7 +16,7 @@ setup(
     author=__author__,
     author_email='michael@mp-development.de',
     license='MIT',
-    install_requires=['youtube-dl>=2020.7.28', 'mutagen>=1.45.0'],
+    install_requires=['youtube-dl>=2020.9.20', 'mutagen>=1.45.1'],
     keywords='youtube mp3',
     packages=find_packages(),
     python_requires='~=3.6, <4',
@@ -33,6 +33,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
         'Topic :: Multimedia :: Video :: Conversion'
     ]
 )
