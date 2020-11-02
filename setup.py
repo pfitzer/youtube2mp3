@@ -16,7 +16,7 @@ setup(
     author=__author__,
     author_email='michael@mp-development.de',
     license='MIT',
-    install_requires=['youtube-dl>=2020.9.20', 'mutagen>=1.45.1'],
+    install_requires=['youtube-dl>=2020.11.1.1', 'mutagen>=1.45.1'],
     keywords='youtube mp3',
     packages=find_packages(),
     python_requires='~=3.6, <4',

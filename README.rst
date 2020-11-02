@@ -1,10 +1,12 @@
-|image0| |image1| |image6| |image2| |image3| |image4|
+|image0| |image1| |image6| |image3| |image4|
 
 youtube2mp3
 ===========
-a wrapper to simplify youtube downloads with `youtube-dl <https://github.com/rg3/youtube-dl>`_
+A wrapper to simplify youtube downloads with `youtube-dl <https://youtube-dl.org/>`_
 
-downloaded files will be tagged with `mutagen <https://pypi.python.org/pypi/mutagen>`_
+Currently the `dev repository <https://github.com/ytdl-org/youtube-dl>`_ of youtube-dl is taken down due to `DMCA takedown notice by RIAA <https://github.com/github/dmca/blob/master/2020/10/2020-10-23-RIAA.md>`_, but downloads still work as usual.
+
+Downloaded files will be tagged with `mutagen <https://pypi.python.org/pypi/mutagen>`_.
 
 installation
 ------------
@@ -56,10 +58,6 @@ install dependencies
 .. |image1| image:: https://pyup.io/repos/github/pfitzer/youtube2mp3/shield.svg
      :target: https://pyup.io/repos/github/pfitzer/youtube2mp3/
      :alt: Updates
-
-.. |image2| image:: https://pyup.io/repos/github/pfitzer/youtube2mp3/python-3-shield.svg
-     :target: https://pyup.io/repos/github/pfitzer/youtube2mp3/
-     :alt: Python ::
      
 .. |image3| image:: https://img.shields.io/pypi/dm/youtube2mp3.svg
     :target: https://pypistats.org/packages/youtube2mp3
