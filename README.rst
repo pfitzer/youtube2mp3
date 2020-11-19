@@ -4,8 +4,6 @@ youtube2mp3
 ===========
 A wrapper to simplify youtube downloads with `youtube-dl <https://youtube-dl.org/>`_
 
-Currently the `dev repository <https://github.com/ytdl-org/youtube-dl>`_ of youtube-dl is taken down due to `DMCA takedown notice by RIAA <https://github.com/github/dmca/blob/master/2020/10/2020-10-23-RIAA.md>`_, but downloads still work as usual.
-
 Downloaded files will be tagged with `mutagen <https://pypi.python.org/pypi/mutagen>`_.
 
 installation
