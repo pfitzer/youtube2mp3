@@ -16,10 +16,10 @@ setup(
     author=__author__,
     author_email='michael@mp-development.de',
     license='MIT',
-    install_requires=['youtube-dl>=2020.11.1.1', 'mutagen>=1.45.1'],
+    install_requires=['youtube-dl>=2021.12.17', 'mutagen>=1.46.0'],
     keywords='youtube mp3',
     packages=find_packages(),
-    python_requires='~=3.6, <4',
+    python_requires='~=3.8, <4',
     entry_points={
         'console_scripts': [
             'youtube2mp3=youtube2mp3.cli:main',
@@ -30,8 +30,6 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Environment :: Console',
         'Intended Audience :: End Users/Desktop',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Topic :: Multimedia :: Video :: Conversion'

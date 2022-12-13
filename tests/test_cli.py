@@ -13,7 +13,6 @@ if not os.path.isdir(TEST_ROOT):
 setattr(options, 'directory', TEST_ROOT)
 
 
-
 class TestCase(unittest.TestCase):
     def test_download(self):
         setattr(options, 'youtube_url', 'https://www.youtube.com/watch?v=XPudIeRotdI')
@@ -33,6 +32,7 @@ class TestCase(unittest.TestCase):
         files = glob.glob(TEST_ROOT + '/*.mp3')
         for file in files:
             os.remove(file)
+
 
 if __name__ == '__main__':
     unittest.main()
