@@ -2,9 +2,96 @@ Changelog
 =========
 
 
+1.5.0 (2022-12-13)
+------------------
+- Removed python 3.6 and 3.7 support updated to latest mutagen and
+  youtube-dl versions. [Michael Pfister]
+- Merge pull request #121 from pfitzer/pyup-update-youtube-
+  dl-2021.1.16-to-2021.1.24.1. [Michael Pfister]
+
+
+1.4.0 (2020-11-02)
+------------------
+- * changed README.rst * depends on latest youtube-dl version. [Michael
+  Pfister]
+- Merge pull request #97 from pfitzer/pyup-update-toml-0.10.1-to-0.10.2.
+  [Michael Pfister]
+
+  Update toml to 0.10.2
+- Merge branch 'master' into pyup-update-toml-0.10.1-to-0.10.2. [Michael
+  Pfister]
+- Merge pull request #99 from pfitzer/pyup-update-youtube-
+  dl-2020.9.20-to-2020.11.1.1. [Michael Pfister]
+
+  Update youtube-dl to 2020.11.1.1
+- Update youtube-dl from 2020.9.20 to 2020.11.1.1. [pyup-bot]
+- Update toml from 0.10.1 to 0.10.2. [pyup-bot]
+- Merge pull request #96 from pfitzer/issue#95. [Michael Pfister]
+
+  Issue#95
+
+
+1.3.0 (2020-10-15)
+------------------
+- #95 test with python 3.9. [Michael Pfister]
+- #95 test with python 3.9. [Michael Pfister]
+- Merge pull request #94 from pfitzer/pyup-update-youtube-
+  dl-2020.9.14-to-2020.9.20. [Michael Pfister]
+
+  Update youtube-dl to 2020.9.20
+- Update youtube-dl from 2020.9.14 to 2020.9.20. [pyup-bot]
+- Merge pull request #93 from pfitzer/pyup-update-youtube-
+  dl-2020.9.6-to-2020.9.14. [Michael Pfister]
+
+  Update youtube-dl to 2020.9.14
+- Update youtube-dl from 2020.9.6 to 2020.9.14. [pyup-bot]
+- Merge pull request #92 from pfitzer/pyup-update-youtube-
+  dl-2020.7.28-to-2020.9.6. [Michael Pfister]
+
+  Update youtube-dl to 2020.9.6
+- Update youtube-dl from 2020.7.28 to 2020.9.6. [pyup-bot]
+- Merge pull request #91 from pfitzer/pyup-update-
+  mutagen-1.45.0-to-1.45.1. [Michael Pfister]
+
+  Update mutagen to 1.45.1
+- Update mutagen from 1.45.0 to 1.45.1. [pyup-bot]
+
+
+1.2.0 (2020-07-28)
+------------------
+- Use newest versions of youtube_dl and mutagen. [Michael Pfister]
+- Merge pull request #90 from pfitzer/pyup-update-youtube-
+  dl-2020.6.16.1-to-2020.7.28. [Michael Pfister]
+
+  Update youtube-dl to 2020.7.28
+- Update youtube-dl from 2020.6.16.1 to 2020.7.28. [pyup-bot]
+- Updated README.rst. [Michael Pfister]
+- Merge pull request #89 from pfitzer/pyup-update-
+  mutagen-1.44.0-to-1.45.0. [Michael Pfister]
+
+  Update mutagen to 1.45.0
+- Update mutagen from 1.44.0 to 1.45.0. [pyup-bot]
+- Create python-publish.yml. [Michael Pfister]
+- Merge pull request #88 from pfitzer/pyup-update-youtube-
+  dl-2020.6.6-to-2020.6.16.1. [Michael Pfister]
+
+  Update youtube-dl to 2020.6.16.1
+- Update youtube-dl from 2020.6.6 to 2020.6.16.1. [pyup-bot]
+- Update README.rst. [Michael Pfister]
+- Update README.rst. [Michael Pfister]
+- Merge pull request #87 from pfitzer/pyup-update-youtube-
+  dl-2020.5.29-to-2020.6.6. [Michael Pfister]
+
+  Update youtube-dl to 2020.6.6
+- Update youtube-dl from 2020.5.29 to 2020.6.6. [pyup-bot]
+- Changelog. [Michael Pfister]
+
+
 1.1.0 (2020-06-02)
 ------------------
 - Posibility to use a file with yt urls. [Michael Pfister]
+- Update unittest.yml. [Michael Pfister]
+- Update unittest.yml. [Michael Pfister]
 - Merge pull request #86 from pfitzer/pyup-update-youtube-
   dl-2020.5.8-to-2020.5.29. [Michael Pfister]
 
@@ -25,11 +112,17 @@ Changelog
 
   Update youtube-dl to 2020.5.3
 - Update youtube-dl from 2020.3.24 to 2020.5.3. [pyup-bot]
+- Update README.rst. [Michael Pfister]
+- Update README.rst. [Michael Pfister]
 - Merge pull request #82 from pfitzer/pyup-update-youtube-
   dl-2020.3.8-to-2020.3.24. [Michael Pfister]
 
   Update youtube-dl to 2020.3.24
 - Update youtube-dl from 2020.3.8 to 2020.3.24. [pyup-bot]
+- Update unittest.yml. [Michael Pfister]
+- Update unittest.yml. [Michael Pfister]
+
+  testing with python 3.9
 - Merge pull request #81 from pfitzer/pyup-update-youtube-
   dl-2020.3.6-to-2020.3.8. [Michael Pfister]
 
