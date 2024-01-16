@@ -1,4 +1,4 @@
 gitchangelog==3.0.4
-mutagen==1.46.0
+mutagen==1.47.0
 toml==0.10.2
-youtube-dl==2021.12.17
+yt-dlp==2023.12.30

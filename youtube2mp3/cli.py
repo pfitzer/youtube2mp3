@@ -7,7 +7,7 @@ import shutil
 import sys
 import tempfile
 
-import youtube_dl
+import yt_dlp
 from mutagen.easyid3 import EasyID3
 
 from youtube2mp3.options import options
@@ -37,7 +37,7 @@ class Youtube2mp3(object):
                         'preferredquality': '192',
                     }],
                     'progress_hooks': [self._download_hook], }
-        with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             try:
                 if os.path.isfile(options.youtube_url):
                     file = open(options.youtube_url, 'r')
