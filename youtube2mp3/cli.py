@@ -46,8 +46,8 @@ class Youtube2mp3(object):
                     file.close()
                 else:
                     ydl.download([options.youtube_url])
-            except (youtube_dl.utils.DownloadError, youtube_dl.utils.ContentTooShortError,
-                    youtube_dl.utils.ExtractorError) as e:
+            except (yt_dlp.utils.DownloadError, yt_dlp.utils.ContentTooShortError,
+                    yt_dlp.utils.ExtractorError) as e:
                 print(e.message)
                 sys.exit(1)
 

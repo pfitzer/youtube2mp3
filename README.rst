@@ -2,7 +2,7 @@
 
 youtube2mp3
 ===========
-A wrapper to simplify youtube downloads with `youtube-dl <https://youtube-dl.org/>`_
+A wrapper to simplify youtube downloads with `yt-dlp <https://github.com/yt-dlp/yt-dlp>`_
 
 Downloaded files will be tagged with `mutagen <https://pypi.python.org/pypi/mutagen>`_.
 
