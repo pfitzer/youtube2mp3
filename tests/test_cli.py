@@ -15,10 +15,10 @@ setattr(options, 'directory', TEST_ROOT)
 
 class TestCase(unittest.TestCase):
     def test_download(self):
-        setattr(options, 'youtube_url', 'https://www.youtube.com/watch?v=XPudIeRotdI')
+        setattr(options, 'youtube_url', 'https://www.youtube.com/watch?v=nfq7x6QPukQ')
         y = Youtube2mp3()
         y.run()
-        file_name = os.path.join(TEST_ROOT, 'EDX - Stay-XPudIeRotdI.mp3')
+        file_name = os.path.join(TEST_ROOT, 'Starchild [nfq7x6QPukQ].mp3')
         self.assertEqual(True, os.path.isfile(file_name))
 
     def test_download_with_file(self):
