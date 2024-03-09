@@ -16,7 +16,7 @@ setup(
     author=__author__,
     author_email='michael@mp-development.de',
     license='MIT',
-    install_requires=['youtube-dl>=2021.12.17', 'mutagen>=1.46.0'],
+    install_requires=['yt-dlp>=2023.12.30', 'mutagen>=1.46.0'],
     keywords='youtube mp3',
     packages=find_packages(),
     python_requires='~=3.8, <4',
@@ -32,6 +32,8 @@ setup(
         'Intended Audience :: End Users/Desktop',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
         'Topic :: Multimedia :: Video :: Conversion'
     ]
 )
