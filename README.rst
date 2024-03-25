@@ -45,7 +45,7 @@ install dependencies
 ::
 
     pip install -r requirements.txt
-    
+
 |image5|
 
 
@@ -56,15 +56,15 @@ install dependencies
 .. |image1| image:: https://pyup.io/repos/github/pfitzer/youtube2mp3/shield.svg
      :target: https://pyup.io/repos/github/pfitzer/youtube2mp3/
      :alt: Updates
-     
+
 .. |image3| image:: https://img.shields.io/pypi/dm/youtube2mp3.svg
     :target: https://pypistats.org/packages/youtube2mp3
     :alt: PyPI - Downloads
-    
-.. |image4| image:: https://github.com/pfitzer/youtube2mp3/workflows/Unit%20Test/badge.svg?event=push
-    :target: https://github.com/pfitzer/youtube2mp3/actions
+
+.. |image4| image:: https://github.com/pfitzer/youtube2mp3/actions/workflows/unittest.yml/badge.svg
+    :target: https://github.com/pfitzer/youtube2mp3/actions/workflows/unittest.yml
     :alt: Unit Tests
-    
+
 .. |image5| image:: https://cdn.buymeacoffee.com/buttons/lato-orange.png
     :target: https://www.buymeacoffee.com/pfitzer
     :alt: Buy Me a Beer
