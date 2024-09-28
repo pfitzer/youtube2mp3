@@ -16,7 +16,7 @@ setup(
     author=__author__,
     author_email='michael@mp-development.de',
     license='MIT',
-    install_requires=['yt-dlp>=2024.5.27', 'mutagen>=1.47.0'],
+    install_requires=['yt-dlp>=2024.7.7', 'mutagen>=1.47.0'],
     keywords='youtube mp3',
     packages=find_packages(),
     python_requires='~=3.10, <4',
