@@ -1,4 +1,4 @@
 gitchangelog==3.0.4
 mutagen==1.47.0
 toml==0.10.2
-yt-dlp==2024.9.27
+yt-dlp>=2025.08.27
