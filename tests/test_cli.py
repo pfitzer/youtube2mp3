@@ -26,6 +26,7 @@ class TestCase(unittest.TestCase):
         y = Youtube2mp3()
         y.run(directory=TEST_ROOT, youtube_url=options.youtube_url)
         files = glob.glob(TEST_ROOT + '/*.mp3')
+        print(f"Gefundene Dateien: {files}")  # Debug-Ausgabe
         self.assertEqual(2, len(files))
 
     def tearDown(self) -> None:

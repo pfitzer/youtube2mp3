@@ -35,13 +35,18 @@ class Youtube2mp3(object):
                 'preferredquality': '192',
             }],
             'progress_hooks': [self._download_hook],
+            'ignoreerrors': True,  # Fügt diese Option hinzu
         }
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             try:
                 if os.path.isfile(youtube_url):
                     with open(youtube_url, 'r', encoding='utf-8') as f:
                         lines = [line.strip() for line in f if line.strip()]
-                    ydl.download(lines)
+                    for line in lines:
+                        try:
+                            ydl.download([line])
+                        except Exception as e:
+                            print(f'Fehler beim Download von {line}: {str(e)}')
                 else:
                     ydl.download([youtube_url])
             except (yt_dlp.utils.DownloadError,
