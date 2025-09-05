@@ -1,7 +1,7 @@
 import glob
-import unittest
 import os
 import tempfile
+import unittest
 
 from youtube2mp3.cli import Youtube2mp3
 from youtube2mp3.options import options
@@ -15,16 +15,16 @@ setattr(options, 'directory', TEST_ROOT)
 
 class TestCase(unittest.TestCase):
     def test_download(self):
-        setattr(options, 'youtube_url', 'https://www.youtube.com/watch?v=nfq7x6QPukQ')
+        setattr(options, 'youtube_url', 'https://www.youtube.com/watch?v=hIkvQHk_sWM')
         y = Youtube2mp3()
-        y.run()
+        y.run(directory=TEST_ROOT, youtube_url=options.youtube_url)
         file_name = os.path.join(TEST_ROOT, 'Starchild [nfq7x6QPukQ].mp3')
         self.assertEqual(True, os.path.isfile(file_name))
 
     def test_download_with_file(self):
         setattr(options, 'youtube_url', os.path.join(os.path.dirname(__file__), 'test.txt'))
         y = Youtube2mp3()
-        y.run()
+        y.run(directory=TEST_ROOT, youtube_url=options.youtube_url)
         files = glob.glob(TEST_ROOT + '/*.mp3')
         self.assertEqual(2, len(files))
 
