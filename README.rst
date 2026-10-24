@@ -63,7 +63,7 @@ YouTube downloads need a JavaScript runtime for yt-dlp, see
 |image5|
 
 
-.. |image0| image:: https://img.shields.io/pypi/v/youtube2mp3.svg
+.. |image0| image:: https://img.shields.io/pypi/v/youtube2mp3.svg?label=pypi
      :target: https://pypi.python.org/pypi?name=youtube2mp3&:action=display
      :alt: pypi
 
