@@ -1,5 +1,4 @@
-# This workflows will upload a Python Package using Twine when a release is created
-# For more information see: https://help.github.com/en/actions/language-and-framework-guides/using-python-with-github-actions#publishing-to-package-registries
+# This workflow builds the package with uv and uploads it to PyPI when a tag is pushed
 
 name: Upload Python Package
 
@@ -11,23 +10,15 @@ on:
 jobs:
   build-n-publish:
     name: Build and publish Python distributions to PyPI
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - name: Set up Python 3.10
-      uses: actions/setup-python@v5
+    - name: Set up uv with Python 3.10
+      uses: astral-sh/setup-uv@v6
       with:
         python-version: '3.10'
-    - name: Install pypa/setuptools
-      run: >-
-        python -m
-        pip install wheel
-    - name: Extract tag name
-      id: tag
-      run: echo ::set-output name=TAG_NAME::$(echo $GITHUB_REF | cut -d / -f 3)
-    - name: Build a binary wheel
-      run: >-
-        python setup.py sdist bdist_wheel
+    - name: Build sdist and wheel
+      run: uv build
     - name: Publish distribution to PyPI
       uses: pypa/gh-action-pypi-publish@release/v1
       with:

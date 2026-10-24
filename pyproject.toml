@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "youtube2mp3"
+dynamic = ["version"]
+description = "Commandline tool to convert youtube videos to tagged mp3 files"
+readme = { file = "README.rst", content-type = "text/x-rst" }
+license = { text = "MIT" }
+authors = [{ name = "Michael Pfister", email = "michael@mp-development.de" }]
+keywords = ["youtube", "mp3"]
+requires-python = ">=3.10, <4"
+dependencies = [
+    "yt-dlp>=2025.08.27",
+    "mutagen>=1.47.0",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Video :: Conversion",
+]
+
+[project.urls]
+Homepage = "https://github.com/pfitzer/youtube2mp3"
+
+[project.scripts]
+youtube2mp3 = "youtube2mp3.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "flake8>=7",
+    "gitchangelog==3.0.4",
+]
+
+[tool.setuptools.dynamic]
+version = { attr = "youtube2mp3.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["youtube2mp3*"]
