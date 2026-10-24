@@ -12,7 +12,7 @@ authors = [{ name = "Michael Pfister", email = "michael@mp-development.de" }]
 keywords = ["youtube", "mp3"]
 requires-python = ">=3.10, <4"
 dependencies = [
-    "yt-dlp>=2026.10.21",
+    "yt-dlp[default]>=2026.10.21",
     "mutagen>=1.47.0",
 ]
 classifiers = [
