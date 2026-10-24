@@ -1,4 +1,4 @@
-|image0| |image1| |image6| |image3| |image4|
+|image0| |image6| |image3| |image4|
 
 youtube2mp3
 ===========
@@ -66,10 +66,6 @@ YouTube downloads need a JavaScript runtime for yt-dlp, see
 .. |image0| image:: https://img.shields.io/pypi/v/youtube2mp3.svg
      :target: https://pypi.python.org/pypi?name=youtube2mp3&:action=display
      :alt: pypi
-
-.. |image1| image:: https://pyup.io/repos/github/pfitzer/youtube2mp3/shield.svg
-     :target: https://pyup.io/repos/github/pfitzer/youtube2mp3/
-     :alt: Updates
 
 .. |image3| image:: https://img.shields.io/pypi/dm/youtube2mp3.svg
     :target: https://pypistats.org/packages/youtube2mp3
