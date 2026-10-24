@@ -36,15 +36,29 @@ see *youtube2mp3 -h* for more information
 
 development
 -----------
-Create a virtual environment
+The project is managed with `uv <https://docs.astral.sh/uv/>`_. Create the virtual environment
+and install all dependencies
 ::
 
-    python3 -m venv /path/to/new/virtual/environment
+    uv sync
 
-install dependencies
+run the tool from source
 ::
 
-    pip install -r requirements.txt
+    uv run youtube2mp3 -d <directory> -y <url>
+
+run the tests (`ffmpeg <https://ffmpeg.org/>`_ is required for the conversion tests)
+::
+
+    uv run pytest
+
+the real youtube downloads are skipped by default, enable them with
+::
+
+    YOUTUBE2MP3_NETWORK_TESTS=1 uv run pytest
+
+YouTube downloads need a JavaScript runtime for yt-dlp, see
+`yt-dlp EJS <https://github.com/yt-dlp/yt-dlp/wiki/EJS>`_ (e.g. install `deno <https://deno.com/>`_).
 
 |image5|
 
