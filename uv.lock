@@ -235,7 +235,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "mutagen", specifier = ">=1.47.0" },
-    { name = "yt-dlp", specifier = ">=2025.8.27" },
+    { name = "yt-dlp", specifier = ">=2026.10.21" },
 ]
 
 [package.metadata.requires-dev]
