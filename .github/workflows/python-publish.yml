@@ -14,6 +14,13 @@ jobs:
   build-n-publish:
     name: Build and publish Python distributions to PyPI
     runs-on: ubuntu-latest
+    # Trusted Publishing: PyPI accepts the OIDC token of this job instead of an API token
+    environment:
+      name: pypi
+      url: https://pypi.org/p/youtube2mp3
+    permissions:
+      contents: read
+      id-token: write
     steps:
     - uses: actions/checkout@v7
     - name: Set up uv with Python 3.10
@@ -24,6 +31,3 @@ jobs:
       run: uv build
     - name: Publish distribution to PyPI
       uses: pypa/gh-action-pypi-publish@release/v1
-      with:
-        user: __token__
-        password: ${{ secrets.PYPI_API_TOKEN }}
