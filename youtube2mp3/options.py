@@ -1,17 +1,11 @@
-import sys
-from optparse import OptionParser
+import argparse
+
 from youtube2mp3 import __version__
 
-
-def show_version(option, opt, value, parser):
-    print("Version: %s" % __version__)
-    sys.exit(0)
-
-
-usage = "usage: %prog [options] arg1 arg2"
-parser = OptionParser(usage=usage)
-parser.add_option("-d", "--directory", dest="directory", help="directory to store the files")
-parser.add_option("-y", "--youtube-url", dest="youtube_url",
-                  help="link to a youtube video or playlist. Or path to a file with yt urls.")
-parser.add_option("-V", "--version", dest="version", help="show version and exit", action="callback",
-                  callback=show_version)
+parser = argparse.ArgumentParser(prog='youtube2mp3',
+                                 description='Download youtube videos and convert them to tagged mp3 files.')
+parser.add_argument('-d', '--directory', required=True, help='directory to store the files')
+parser.add_argument('-y', '--youtube-url', required=True,
+                    help='link to a youtube video or playlist. Or path to a file with yt urls.')
+parser.add_argument('-V', '--version', action='version', version='Version: %s' % __version__,
+                    help='show version and exit')

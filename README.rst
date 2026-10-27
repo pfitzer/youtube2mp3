@@ -19,19 +19,26 @@ usage
 -----
 ::
 
-    youtube2mp3 [options] arg1 arg2
+    youtube2mp3 -d DIRECTORY -y YOUTUBE_URL
+
+relative paths are resolved against the current working directory, a missing target directory is created.
+The exit code is 1 if at least one download failed.
 
 see *youtube2mp3 -h* for more information
 ::
 
-    Options:
-  -h, --help            show this help message and exit
-  -d DIRECTORY, --directory=DIRECTORY
-                        directory to store the files
-  -y YOUTUBE_URL, --youtube-url=YOUTUBE_URL
-                        link to a youtube video or playlist. Or path to a file
-                        with yt urls.
-  -V, --version         show version and exit
+    usage: youtube2mp3 [-h] -d DIRECTORY -y YOUTUBE_URL [-V]
+
+    Download youtube videos and convert them to tagged mp3 files.
+
+    options:
+      -h, --help            show this help message and exit
+      -d, --directory DIRECTORY
+                            directory to store the files
+      -y, --youtube-url YOUTUBE_URL
+                            link to a youtube video or playlist. Or path to a file
+                            with yt urls.
+      -V, --version         show version and exit
 
 
 development
