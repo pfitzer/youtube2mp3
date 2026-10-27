@@ -1,6 +1,9 @@
 name: Unit Test
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [master]
+  pull_request:
 
 permissions:
   contents: read
@@ -9,19 +12,23 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     strategy:
       max-parallel: 4
       matrix:
         python-version: ["3.10", "3.11", "3.12"]
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v7
     - name: Install ffmpeg
+      # a stalled apt mirror must not block the job until the 6 hour default timeout
+      timeout-minutes: 5
       run: |
-        sudo apt-get update
-        sudo apt-get install -y ffmpeg
+        APT_OPTS="-o Acquire::Retries=3 -o Acquire::http::Timeout=30"
+        sudo apt-get $APT_OPTS update
+        sudo apt-get $APT_OPTS install -y --no-install-recommends ffmpeg
     - name: Set up uv with Python ${{ matrix.python-version }}
-      uses: astral-sh/setup-uv@v6
+      uses: astral-sh/setup-uv@v10.3.2
       with:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
